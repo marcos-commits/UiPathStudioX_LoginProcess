@@ -1,0 +1,1292 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1218,17027" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="1072,16962" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="x:Object" Default="[&quot;keundong26@tobeway.com&quot;]" Name="email" />
+      <Variable x:TypeArguments="s:Char[]" Name="arr_emailChar" />
+      <Variable x:TypeArguments="x:String" Name="str_convertedWord" />
+      <Variable x:TypeArguments="x:String" Name="str_encryptedEmail" />
+      <Variable x:TypeArguments="x:Object" Name="password" />
+      <Variable x:TypeArguments="s:Char[]" Name="arr_password" />
+      <Variable x:TypeArguments="x:String" Name="str_encryptedPassWord" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="list_str_email_decryption" />
+      <Variable x:TypeArguments="x:Int32" Name="int_idx">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="str_email" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="list_str_password_decryption" />
+      <Variable x:TypeArguments="x:String" Name="str_password" />
+      <Variable x:TypeArguments="x:String" Name="str_word" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: KT bizmeka EZ" sap:VirtualizedContainerService.HintSize="1030,16874" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="b3963bff-0c2d-4c91-a1dc-e386258a8f6a" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="996,16656" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="954,25" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <Assign DisplayName="이메일 복호화할 빈 리스트 선언" sap:VirtualizedContainerService.HintSize="954,83" sap2010:WorkflowViewState.IdRef="Assign_47">
+              <Assign.To>
+                <OutArgument x:TypeArguments="scg:List(x:String)">[list_str_email_decryption]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="scg:List(x:String)">[New List(of String)]</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <Assign DisplayName="복호화할 비번 빈 리스트 선언" sap:VirtualizedContainerService.HintSize="954,83" sap2010:WorkflowViewState.IdRef="Assign_48">
+              <Assign.To>
+                <OutArgument x:TypeArguments="scg:List(x:String)">[list_str_password_decryption]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="scg:List(x:String)">[New List(of String)]</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <If Condition="[Notes.Sheet(&quot;Scratchpad&quot;).Cell(&quot;di&quot;) = string.Format(&quot;empty&quot;) AND Notes.Sheet(&quot;Scratchpad&quot;).Cell(&quot;wp&quot;) = string.Format(&quot;empty&quot;)]" sap:VirtualizedContainerService.HintSize="954,5614" sap2010:WorkflowViewState.IdRef="If_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="628,5137" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="586,243" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="한번만 입력하면 됩니다." Title="이메일 입력">
+                    <ui:InputDialog.Result>
+                      <OutArgument x:TypeArguments="x:Object">[email]</OutArgument>
+                    </ui:InputDialog.Result>
+                  </ui:InputDialog>
+                  <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="586,243" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="비번을 한번만 입력하면 됩니다." Title="비번입력">
+                    <ui:InputDialog.Result>
+                      <OutArgument x:TypeArguments="x:Object">[password]</OutArgument>
+                    </ui:InputDialog.Result>
+                  </ui:InputDialog>
+                  <Assign DisplayName="이메일을 char array로" sap:VirtualizedContainerService.HintSize="586,83" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="s:Char[]">[arr_emailChar]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="s:Char[]">[(email.ToString).ToCharArray()]</InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                  <Assign DisplayName="비번을 char array로" sap:VirtualizedContainerService.HintSize="586,83" sap2010:WorkflowViewState.IdRef="Assign_6">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="s:Char[]">[arr_password]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="s:Char[]">[(password.ToString).ToCharArray]</InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                  <Assign DisplayName="암호화할 이메일 아이디 우선 빈 스트링으로 선언" sap:VirtualizedContainerService.HintSize="586,83" sap2010:WorkflowViewState.IdRef="Assign_4">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[str_encryptedEmail]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                  <Assign DisplayName="암호화할 비번을 우선 빈 스트링으로 선언" sap:VirtualizedContainerService.HintSize="586,83" sap2010:WorkflowViewState.IdRef="Assign_7">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[str_encryptedPassWord]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                  <Assign DisplayName="복호화할 빈 스트링으로 변수 선언" sap:VirtualizedContainerService.HintSize="586,83" sap2010:WorkflowViewState.IdRef="Assign_13">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[str_email]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                  <Assign DisplayName="복호화할 비번 빈 스트링으로 선언" sap:VirtualizedContainerService.HintSize="586,83" sap2010:WorkflowViewState.IdRef="Assign_31">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[str_password]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                  <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="586,83" sap2010:WorkflowViewState.IdRef="Assign_35">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[str_word]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                  <Assign DisplayName="이메일 복호화할 빈 리스트 선언" sap:VirtualizedContainerService.HintSize="586,83" sap2010:WorkflowViewState.IdRef="Assign_43">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="scg:List(x:String)">[list_str_email_decryption]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="scg:List(x:String)">[New List(of String)]</InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                  <Assign DisplayName="복호화할 비번 빈 리스트 선언" sap:VirtualizedContainerService.HintSize="586,83" sap2010:WorkflowViewState.IdRef="Assign_44">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="scg:List(x:String)">[list_str_password_decryption]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="scg:List(x:String)">[New List(of String)]</InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                  <ui:ForEach x:TypeArguments="x:Char" CurrentIndex="[int_idx]" DisplayName="For Each - 배열에 이메일 char들을 암호화" sap:VirtualizedContainerService.HintSize="586,1251" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[arr_emailChar]">
+                    <ui:ForEach.Body>
+                      <ActivityAction x:TypeArguments="x:Char">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Char" Name="character" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="552,982" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If Condition="[(Convert.ToInt32(character) &gt; 96) And (Convert.ToInt32(character) &lt; 123)]" sap:VirtualizedContainerService.HintSize="510,771" sap2010:WorkflowViewState.IdRef="If_2">
+                            <If.Then>
+                              <Sequence sap:VirtualizedContainerService.HintSize="476,294" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign DisplayName="한 글자 들을 알파벳을 0 ~ 25까지 만들기 위함" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[str_convertedWord]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">[(Convert.ToInt32(character)-97).ToString]</InArgument>
+                                  </Assign.Value>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Assign>
+                                <Assign DisplayName="암호화" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[str_convertedWord]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">[((CInt(str_convertedWord)*31) Mod 26).ToString("x4")]</InArgument>
+                                  </Assign.Value>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Assign>
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence sap:VirtualizedContainerService.HintSize="476,294" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign DisplayName="알파벳이 아닌 것들 구분" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_18">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[str_convertedWord]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">[(Convert.ToInt32(character)).ToString]</InArgument>
+                                  </Assign.Value>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Assign>
+                                <Assign DisplayName="암호화" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_19">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[str_convertedWord]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">[((CInt(str_convertedWord)*31)).ToString("x4")]</InArgument>
+                                  </Assign.Value>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Assign>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                          <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="510,83" sap2010:WorkflowViewState.IdRef="Assign_5">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[str_encryptedEmail]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[str_encryptedEmail+str_convertedWord]</InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEach.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ForEach>
+                  <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="586,83" sap2010:WorkflowViewState.IdRef="Assign_10">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[str_convertedWord]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                  <ui:ForEach x:TypeArguments="x:Char" CurrentIndex="[int_idx]" DisplayName="For Each - 비밀번호 암호화" sap:VirtualizedContainerService.HintSize="586,1199" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[arr_password]">
+                    <ui:ForEach.Body>
+                      <ActivityAction x:TypeArguments="x:Char">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Char" Name="currentChar" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="552,982" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If Condition="[(Convert.ToInt32(currentChar) &gt; 96) And (Convert.ToInt32(currentChar) &lt; 123)]" sap:VirtualizedContainerService.HintSize="510,771" sap2010:WorkflowViewState.IdRef="If_4">
+                            <If.Then>
+                              <Sequence sap:VirtualizedContainerService.HintSize="476,294" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign DisplayName="소문자 알파벳들 0~25까지 내용" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_23">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[str_convertedWord]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">[(Convert.ToInt32(currentChar)-97).ToString]</InArgument>
+                                  </Assign.Value>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Assign>
+                                <Assign DisplayName="암호화" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_24">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[str_convertedWord]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">[((CInt(str_convertedWord)*31) Mod 26).ToString("x4")]</InArgument>
+                                  </Assign.Value>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Assign>
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence sap:VirtualizedContainerService.HintSize="476,294" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign DisplayName="소문자 알파벳이 아닌 것들" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_21">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[str_convertedWord]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">[(Convert.ToInt32(currentChar)).ToString]</InArgument>
+                                  </Assign.Value>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Assign>
+                                <Assign DisplayName="암호화" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_22">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[str_convertedWord]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">[((CInt(str_convertedWord)*31)).ToString("x4")]</InArgument>
+                                  </Assign.Value>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Assign>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                          <Assign DisplayName="다 합치기" sap:VirtualizedContainerService.HintSize="510,83" sap2010:WorkflowViewState.IdRef="Assign_25">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[str_encryptedPassWord]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[str_encryptedPassWord+str_convertedWord]</InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEach.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ForEach>
+                  <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File - 프로젝트 노트북에 저장" sap:VirtualizedContainerService.HintSize="586,723" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="Project_Notebook.xlsx">
+                    <ueab:ExcelApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="476,450" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Scratchpad&quot;).Cell(&quot;di&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,161" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[str_encryptedEmail]" />
+                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Scratchpad&quot;).Cell(&quot;wp&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,161" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[str_encryptedPassWord]" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ueab:ExcelApplicationCard.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ueab:ExcelApplicationCard>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="476,294" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_45">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[str_encryptedEmail]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[Notes.Sheet("Scratchpad").Cell("di").ToString]</InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                  <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_46">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[str_encryptedPassWord]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[Notes.Sheet("Scratchpad").Cell("wp").ToString]</InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                </Sequence>
+              </If.Else>
+            </If>
+            <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="954,83" sap2010:WorkflowViewState.IdRef="Assign_32">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:Char[]">[arr_emailChar]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:Char[]">[str_encryptedEmail.ToCharArray]</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="954,83" sap2010:WorkflowViewState.IdRef="Assign_33">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[int_idx]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">0</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <ui:ForEach x:TypeArguments="x:Char" CurrentIndex="[int_idx]" DisplayName="For Each - 이메일 복호화" sap:VirtualizedContainerService.HintSize="954,1039" sap2010:WorkflowViewState.IdRef="ForEach`1_8" Values="[arr_emailChar]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:Char">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Char" Name="currentChar" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="552,770" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="4글자씩 합치기" sap:VirtualizedContainerService.HintSize="510,83" sap2010:WorkflowViewState.IdRef="Assign_34">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[str_word]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[str_word+currentChar.ToString]</InArgument>
+                      </Assign.Value>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Assign>
+                    <If Condition="[(int_idx+1) Mod 4 = 0]" DisplayName="If - 4글자면 리스트에 담기" sap:VirtualizedContainerService.HintSize="510,559" sap2010:WorkflowViewState.IdRef="If_6">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="476,376" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:InvokeCode ContinueOnError="{x:Null}" Code="list_str_email_decryption.Add(str_word)" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+                            <ui:InvokeCode.Arguments>
+                              <InOutArgument x:TypeArguments="scg:List(x:String)" x:Key="list_str_email_decryption">[list_str_email_decryption]</InOutArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="str_word">[str_word]</InArgument>
+                            </ui:InvokeCode.Arguments>
+                          </ui:InvokeCode>
+                          <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_37">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[str_word]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEach>
+            <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="954,83" sap2010:WorkflowViewState.IdRef="Assign_27">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:Char[]">[arr_password]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:Char[]">[str_encryptedPassWord.ToCharArray]</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="954,83" sap2010:WorkflowViewState.IdRef="Assign_38">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[str_word]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="954,83" sap2010:WorkflowViewState.IdRef="Assign_39">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[int_idx]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">0</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <ui:ForEach x:TypeArguments="x:Char" CurrentIndex="[int_idx]" DisplayName="For Each - 비번 복호화" sap:VirtualizedContainerService.HintSize="954,1039" sap2010:WorkflowViewState.IdRef="ForEach`1_9" Values="[arr_password]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:Char">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Char" Name="currentChar" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="552,770" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="510,83" sap2010:WorkflowViewState.IdRef="Assign_40">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[str_word]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[str_word+currentChar.ToString]</InArgument>
+                      </Assign.Value>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Assign>
+                    <If Condition="[(int_idx+1) Mod 4 = 0]" sap:VirtualizedContainerService.HintSize="510,559" sap2010:WorkflowViewState.IdRef="If_7">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="476,376" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:InvokeCode ContinueOnError="{x:Null}" Code="list_str_password_decryption.Add(str_word)" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
+                            <ui:InvokeCode.Arguments>
+                              <InOutArgument x:TypeArguments="scg:List(x:String)" x:Key="list_str_password_decryption">[list_str_password_decryption]</InOutArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="str_word">[str_word]</InArgument>
+                            </ui:InvokeCode.Arguments>
+                          </ui:InvokeCode>
+                          <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_42">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[str_word]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEach>
+            <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="954,83" sap2010:WorkflowViewState.IdRef="Assign_26">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[str_convertedWord]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="954,966" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[list_str_email_decryption]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="letter" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="552,749" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="510,83" sap2010:WorkflowViewState.IdRef="Assign_9">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[str_convertedWord]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[(Convert.ToInt32(letter, 16)).ToString]</InArgument>
+                      </Assign.Value>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Assign>
+                    <If Condition="[(CInt(str_convertedWord) &gt; -1) And (CInt(str_convertedWord) &lt; 26)]" sap:VirtualizedContainerService.HintSize="510,538" sap2010:WorkflowViewState.IdRef="If_3">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="476,184" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="434,96" sap2010:WorkflowViewState.IdRef="Assign_12">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[str_email]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[str_email+Convert.ToChar((((Convert.ToInt32(str_convertedWord)) * 21) Mod 26)+97).ToString]</InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="476,171" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_20">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[str_email]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[str_email+Convert.ToChar(CInt(Convert.ToInt32(str_convertedWord)/31)).ToString]</InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEach>
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="954,966" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[list_str_password_decryption]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="552,749" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="510,83" sap2010:WorkflowViewState.IdRef="Assign_28">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[str_convertedWord]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[(Convert.ToInt32(currentText, 16)).ToString]</InArgument>
+                      </Assign.Value>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Assign>
+                    <If Condition="[(CInt(str_convertedWord) &gt; -1) And (CInt(str_convertedWord) &lt; 26)]" sap:VirtualizedContainerService.HintSize="510,538" sap2010:WorkflowViewState.IdRef="If_5">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="476,184" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="434,96" sap2010:WorkflowViewState.IdRef="Assign_30">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[str_password]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[str_password+Convert.ToChar((((Convert.ToInt32(str_convertedWord)) * 21) Mod 26)+97).ToString]</InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="476,171" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_29">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[str_password]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[str_password+Convert.ToChar(CInt(Convert.ToInt32(str_convertedWord)/31)).ToString]</InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEach>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'keundong26@tobeway.com'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,219" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="b3963bff-0c2d-4c91-a1dc-e386258a8f6a" Text="[str_email]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://ezsso.bizmeka.com/sso/ssoLogin.do" CvElementArea="797, 322, 355, 51" CvTextArea="847, 341, 158, 14" CvTextArgument="keundong26@tobeway.com" CvType="InputBox" DesignTimeRectangle="772, 324, 380, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'keundong26@tobeway.com'" FullSelectorArgument="&lt;webctrl id='username' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='input-lg w100p' aaname='' /&gt;" Guid="857886aa-9e50-4988-ba87-1922cbc809c0" ImageBase64="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" InformativeScreenshot="eed4ba507d032727189fd367a1b83c1f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='KT bizmeka EZ' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,219" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="b3963bff-0c2d-4c91-a1dc-e386258a8f6a" Text="[str_password]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://ezsso.bizmeka.com/sso/ssoLogin.do" CvElementArea="804, 380, 346, 50" CvTextArea="847, 399, 53, 13" CvTextArgument="Password" CvType="InputBox" DesignTimeRectangle="772, 382, 380, 48" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='input-lg w100p' aaname='' /&gt;" Guid="0b1205d2-b3ee-491f-8404-adfcd86afdc9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYAAAAA0CAYAAACD6+9oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUOSURBVHhe7d1PaiNHFMfxLAKBbAOBwAzZTAIJWU3Wc4CcKplVkiP4ArqAcLIYCGGQyQUspI02UqxxLLDxQoxXqtSrrmqXqkuy9adbUr/vBx6jrq4qazPvp2p5mE+urq4MRVGnUdPp1FXu3ia1r33qqvD+tq069srdC5XOCdfp+LEVAUBRJ1ThL27uXq5Wzd10n01r173D+9u21u216f65fXLX8Vi4Xlfx+kNVNgBGo5EZDoem3++by8vLVtbd3V12nKIoqi0lPVx6ufT0JwNgMpm4yePx2Mznc7NYLExbSQAAQJtJD5deLj1derv0+JUBIBNms5lf2m43Nzf+FQC0n/R26fHZAJAjgqSEFre3t/4VAOggPT5+HFQGgCSDHBW0uL6+9q8AQAfp8fEpoAwA+bKgzc/8U1oedQFAID1een0lAOQbY034DgCARtLrCQACAIBCBIBFAADQiACwCAAAGhEAFgEAQCMCwCIAAGhEAFgEAACNCACLAACg0VEEwP0vv5kP3/5o/v38K/enXDeJAACg0cED4L83P5nJp19USsabQgAA0OigAXD/86+u2X949do8/PXejcmfci3j929/d2N1IwAAaHTQAJDHPdLoH/7u+ZHCQ++fIhi+ee1H6kUAANDooAEw+exL1+hzZFzuN4EAAKDRYQNAmvy6AFhxb98IADEzvc6Z6Q78JYDWO9oAaNLuAVA0z7OzqM5PrZMSAIA2BIC1rwDoXIT/V2BgujYEHq9PAQEAaNN4AHz8852Zvvy+bP7PLVkja+uw/wDwJwI5BQy6SyeDyhw/XjTe6tjsomPOOj17x3P7dUyvfMtF2OTWx+vCPr3zaPymZzph7rm9Z9cSAIAejQfANs0/lKytQ10ngEozdQ23a+9arpH710FuzK15bPgDaeB27/JnRXu6e2XTj0JI+CB6fE/JKaVyH0DbNR4AoZlvatt1z1HHdwCrPumXn95zDTfbhIv1xZi8tusv7Dzf6N0ne9fkM6ETB0r8WiTBkl0PoNUIAGv/J4BHS5/K06brG/5SY86MlU1e1ru9pFnL/SgcKg3disdk3/J0YKWBEO8FQIWjCoBt7+2qvgBIHrPkmrRfu/xbQ8mYb/yD8tO+3dkGS3cg+4f9nnECiAOg8l44AQDaEABWfQGwPF48v08DwI8vBUA6VjT6jt0rNGg5FXQ6y18QL502/M8u90gDIAknd8ogAABVCACrzkdAxSdtafzSjLvlJ/bQcOPHPbmxoAiPaMzvm/7MYp6vuOFXAsBaem/8FhCgDQFg7R4AAHB6jioA1iEAAGC/CACLAACgUeMBsNM/BHvxnd9lvwgAABo1HgAf/3jnGnmuwa+r6dc/uLV1IAAAaNR4ABwjAgCARgSARQAA0IgAsAgAABoRABYBAEAjAsAiAABoRABYBAAAjQgAiwAAoBEBYBEAADTKBkC/3zeLxcJPaT8CAIA20uOl11cCYDgcmvl87qe1HwEAQBvp8dLrKwEwGo3MeDz209qPAACgjfR46fWVAAingNks8x+ctBABAEAT6e3xp/9KAEwmEzdBUkKOCm3+ToAAANB20sOll0tPl94uPX5lAISSI4JMli8L5BvjNpYEQG6coiiqLSU9XHp5/NjnyQCgKEpPhWaQu7dpbbrXtj87rFtVm85Pa9W6VXum4+l1WuvuNVkEAEVRJ1dpI8vNieupufH9eM6q17nr3Li8DhXPyd1vvqbmf6CoPnpqF9bsAAAAAElFTkSuQmCC" InformativeScreenshot="4d9ea4389c9a5d274b4ef07c386ecdc8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='KT bizmeka EZ' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '로그인'" sap:VirtualizedContainerService.HintSize="954,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3963bff-0c2d-4c91-a1dc-e386258a8f6a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://ezsso.bizmeka.com/sso/ssoLogin.do" CvElementArea="771, 486, 382, 54" CvTextArea="935, 505, 53, 20" CvTextArgument="2191" CvType="Button" DesignTimeRectangle="772, 489, 380, 50" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'로그인'" FullSelectorArgument="&lt;webctrl id='btnSubmit' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnSubmit' tag='A' type='' class='login-btn' aaname='로그인' check:innerText='로그인' /&gt;" Guid="82f54b04-a57b-44e5-b930-5e48489d10bc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYAAAAA2CAYAAADOI05jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANlSURBVHhe7dvPaxxlHMBhD156FA89+m8I9qYlN+nBkwfx4qEe9GChUhBElIIVQfDkoVAqCB4KWkoDbaE9eJOKFxERjOluSlobk7T5uT/e7jt2tunOpFnTbNp33mfgIcm+70xu3092Z/Jcu90OAOyPubm5Qt1a9Li1vSYAAPvomQ1Aa/pSaB2aCq0DB8ON518EoAHiTC9m+2DGb535wwAUw//B4J8dORmAdJUzvQjBlgg8DMCgDqMnAdAscdZXAzAog7/8AZorzvg46ysBqNsMQPMIAECmyieRBAAgM+XcFwCAzAgAQKYEACBTAgCQKQEAyJQAAGRKAAAyJQAAmRIAgEwJAECmBAAgUwIAE3Dr8JHQbc2F/sZGWPr0VO0eeNoEgGSsX7kWxjr6/bDy7feV88uhPNYxuMbqufOVa0QL77wfOn/8GUK3W+zr3VkId7/+JrReeGm4RwBIgQDQKGUk4te69XGU19j87ffK2tJnX4T+6lrotm8WIbj16uth4+dfQuh0wtr56eE+ASAFAkCjTDIA869Mhc5fM6G/uRmWP/9q+Po/b7wVevO3izAsnvikeE0ASIEA0CiTDMDihx8XQz4O+9tH3nxkbfP6r8U5qz9eLH4WAFIgACRj/dpPxWfuOx7b3AMY13YBiIM8DvQ42OOA37o2Gh4BIAUCQDLiQI7Hypnvatf3yugwL3kHQNMIAMkoA3Dv9Nna9b2yXQDiPYDuzKx7ADSGAJCM/XoHUP6e0QBEyye/DP219epTQL1eWL98dfgoqACQAgEgGfExy7HuAQyOus/px7VTaBaPfRQ6M3/7PwCSJwAk687bR0N/+W4hfl+35/+af/m1/4b74HiSj5oEgBQIAMmaRADGHdxxLe7Z7p2GAJACASBZkwjA8Jr3VsK/7x2v3RMJAE0gADzTykG72yMO89UfLjzxNUYDs1MAIAUCALsgADSBAMAuCABNIACwCwvvfhB6S8sPPiR6/BEfK627BjxtAgCQKQEAyJQAAGRKAAAyJQAAmRIAgEwJAECmBAAgUwIAkCkBAMiUAABkqhKA1oGDYbZmIwDNEGd8nPXVAByaqj0BgOaIs74agOlLRRniBu8EAJqjnOlxxsdZXwnAMAKDOpQhACB9xeCPs33L8I8eCQAA+RAAgCy1w32g11c0X+9YNQAAAABJRU5ErkJggg==" InformativeScreenshot="4ff337630a93e6096b51d3f7e5708a4b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='KT bizmeka EZ' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="954,91" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NCheckState DisplayName="Check App State '하루동안 보이지 않음 일주일동안 보이지 않음'" sap:VirtualizedContainerService.HintSize="954,490" sap2010:WorkflowViewState.IdRef="NCheckState_1" Timeout="3" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="타겟이 나타남" sap:VirtualizedContainerService.HintSize="450,271" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,156" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(esc)][u(hk)]" Version="V3" />
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="타겟이 나타나지 않음" sap:VirtualizedContainerService.HintSize="450,106" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://ezportal.bizmeka.com/portal/main/main.do" DesignTimeRectangle="479, 788, 15, 15" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl parentid='btnClose_313333211' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='btnClose_313333211' tag='IMG' type='' class='' aaname='닫기' /&gt;" Guid="b5bec14f-7ec1-4a73-8cd4-2e56dad2bd2f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFLSURBVDhPvZO7ioNQEIb35RTLIAjWgmJjIUE7RbvYpzOIgg+QkAcQ7UTfacJ/YA7HW1gW2eJnnIsf48z4o2kanaX/gQVBQPf7nZ7PJ43jKCx8xPfqoQ3scrlQ0zTUti0lSUKO45BhGMLCRxx51K3fXcBs26au66goikXRWsijzjTNRVzCdF2n1+tFeZ4vCtayLEvY2+0mOlRzEhZFET0eD5mo65o8z5M+5Lqu6IiBVVXR9XqVeQnDLNTh+r5PwzBIIINguQb1eI99Cev7fjNUBqZpugFBmBni7EvYPM8yqCrLMpqmSQDXOWwZZ8P+18740wBEh+hUzR92tp7Zekb8ySrwcGZxHFNZluIZ29qbEUDqORxuE3f2fr/lnfH6j/T1zqDT/gAW/5s4WsyElwILH/Ff/ZuqwjAUw8WWcTaw8BHfq4cOYX/RiTCNPiJn6fwyiWqzAAAAAElFTkSuQmCC" InformativeScreenshot="eb5ecb06f047a54704e90bbc9d898520.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='KT bizmeka EZ' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="29, 774, 480, 40" FriendlyName="'하루동안 보이지 않음 일주일동안 보이지 않음'" FullSelectorArgument="&lt;webctrl class='btn-bottom2' parentid='systemPopupdiv_313333211' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='btn-bottom2' parentid='systemPopupdiv_313333211' tag='DIV' type='' aaname=' &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;' check:innerText='하루동안 보이지 않음  일주일동안 보이지 않음' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '근태관리 삭제'" sap:VirtualizedContainerService.HintSize="954,158" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3963bff-0c2d-4c91-a1dc-e386258a8f6a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://ezportal.bizmeka.com/portal/main/main.do" CvElementArea="635, 616, 104, 104" CvTextArea="660, 690, 55, 16" CvTextArgument="ZEH22|" CvType="Button" DesignTimeRectangle="638, 620, 100, 100" DesignTimeScaleFactor="1" ElementType="ListItem" FriendlyName="'근태관리 삭제'" FullSelectorArgument="&lt;webctrl id='portletLi_302733626' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl id='portletLi_302733626' tag='LI' type='' class='item' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='근태관리' /&gt;" Guid="22780848-ad39-4395-ba4a-353366232a01" ImageBase64="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" InformativeScreenshot="1e231b45f5e16faa88616cf22ccd6efd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='KT bizmeka EZ' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvType="Button" DesignTimeRectangle="764, 616, 106, 105" ElementType="Button" FriendlyName="'chrome.exe KT bizmeka EZ'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="954,91" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <If Condition="[Notes.Sheet(&quot;Scratchpad&quot;).Cell(&quot;startTime&quot;).ToString = &quot;empty&quot;]" sap:VirtualizedContainerService.HintSize="954,3124" sap2010:WorkflowViewState.IdRef="If_10">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="552,1335" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="510,91" sap2010:WorkflowViewState.IdRef="WriteLine_18" Text="출근" />
+                  <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="510,522" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_5" ResizeWindow="None" WorkbookPath="Project_Notebook.xlsx">
+                    <ueab:ExcelApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="476,249" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Scratchpad&quot;).Cell(&quot;startTime&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,161" sap2010:WorkflowViewState.IdRef="WriteCellX_10" Value="[Now.ToString(&quot;HH:mm&quot;)]" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ueab:ExcelApplicationCard.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ueab:ExcelApplicationCard>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '출근'" sap:VirtualizedContainerService.HintSize="510,158" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3963bff-0c2d-4c91-a1dc-e386258a8f6a" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://ezkhuman.bizmeka.com/product/outlnk.do?code=PJ02&amp;" CvType="Button" DesignTimeRectangle="1702, 477, 63, 31" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'출근'" FullSelectorArgument="&lt;webctrl id='btnGoOffice' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnGoOffice' tag='BUTTON' type='button' class='btn btn-color7 br' aaname=' 출근 ' check:innerText='출근' /&gt;" Guid="5e87cbac-24d8-47be-b896-758dcd9fc7bd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEMAAAAjCAYAAADPPrcpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEhSURBVGhD7Zm9DYMwEEazAgsiVkkZ5EmAhjVgB7oUFMxwwWDMQYxihGP+viddgbGQ7vkDI/lBQAMZDC2jqirK85ySJLlNyX5l3wNahrzRNI26ugeyX9n3gJYhTd0R3jdkQMYIZDAggwEZDMhgQAZjBxkFiSCgYKi4UONzZvO+SrQz3HLKZNRZeHYZNaWRaYX7EqWaZsEFZMwoxShj8VUx08mI0lavW7zJKOJpEiYClJgws2uve9aZZbikk7EyTTZ4kPFrV5hV9KKnaXypHCZkp2Soj+kfVncLHmWs/G94pxS242t2ma3slIwpxq3y2jKQDEYvw3b7tPnwuhZ1oGT4TYEJjzKOD2QwIIMBGQzIYEAGwygDZ61MBk7hmQwAGQyiDxKHweIQ9F5NAAAAAElFTkSuQmCC" InformativeScreenshot="4cd66a79d42b7fd6dcba507e57867819.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='KT bizmeka EZ_인사' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvElementArea="1767, 476, 66, 33" CvTextArea="1787, 485, 26, 15" CvTextArgument="e2" CvType="Button" DesignTimeRectangle="1769, 477, 63, 31" ElementType="Button" FriendlyName="'퇴근'" FullSelectorArgument="&lt;webctrl id='btnGoHome' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnGoHome' tag='BUTTON' type='button' class='btn btn-color7 br' aaname=' 퇴근 ' check:innerText='퇴근' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEMAAAAjCAYAAADPPrcpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEMSURBVGhD7dkxDoIwGIZhr8AFG85DOAll4Rp4BzYHBs7wS6XUL6bYYNoG0+9NOgAy/I8VB27CXMSAHMY0TTIMg3RdV8wy85q59xyGubAsiz0qIzOvmXvPYRipEsO5iUGMd8SAiAERAyIGRAzoAhiz6LqSqhnt8dbcK6mq9fzBUv1sPxmvLBhHg20D+TGOG6V198YtC8bYrMPWeh3bV4kYsCP21d7N1d8wtnvj9n8746FFEcP2wlCiH/Y4YlkwzjxAQ/8inyvmDsmC4fJ+q2efGem6LMb3n1aakmMEt32jy8EIV9DOCOfHCO6oBFAXwLhOxICIAREDIgZEDIgYkBeD71oBg2/hAYMRAxJ5AqMq4lqM6E8oAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '확인'" sap:VirtualizedContainerService.HintSize="510,158" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3963bff-0c2d-4c91-a1dc-e386258a8f6a" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="1040, 157, 64, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'확인'" FullSelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='확인' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl role='push button' automationid='' /&gt;" Guid="2670540c-18a0-4c94-aaf7-08b0f8192cf2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAkCAYAAAAw55zoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIXSURBVGhD7ZrfSgJBFMZ7jl6gbiqCoIsguuoVhHqMugv6BxF10VWQ2RMoBBXdREQWeGMEdVFE+QBuhqipq5Sd+mbH3bPrKER/rNn54MPZmV3x+3Fm9uLYQ0Y++YAc3dRocuOJ+uYs6p3Jam1kRNbj25pM78gFsnlSVj4YBm8lK5KCBHJ6VxcLQ4uPlLiwySo1xKLOQkZkRWZkP7+vi3kBJBLNi8n9K5sOr20aX3ty6elqZERWZMb19E7eA9Ivz4xyrUET6/rDaBpZ8+U3MR5eevSANG/g47CYZ4YMEJYZMkBYZsgAYZkhA4Rlhn4JSJUe6IXiyrXummeGfhBIiVJV8ZWtqtZpHpDEZ+C5vToV5G3QQ9pbi1sNSu2xe7/BEB93ccuogKCSeGj/tRZA4pb4Wk9WVa4pgKRfqJApedeBuf8PRBFwPtOQ2yCMQD7csULklAchBFvGMYIF3zKKCoG1PVQDwfxCsDZAOlijCvmMVdXkWAsgOETbSlkh7YH8hCE+7mKFtNsyBkjrvPglarW8lr9oiI//4Bnyu+aZIQOEZYYMEJYZMkBYZsgAYZkhA4RlhgwQlhkSQAYWnHYemjZhbVQNfjBwgUS2nVbmgWxljq3mfA/q6GArcyrGWpm82b17aVPuWf9md7boNLtRGcjua3ZD0WTFpRc2x84Cf4doKmO90myiSCPLDjWdPbqSE1mRmcsHxIjoHeScal1JmmOFAAAAAElFTkSuQmCC" InformativeScreenshot="15b49ff42632e95d237c487050dab4bc.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='KT bizmeka EZ_인사 - Chrome' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="1112, 157, 64, 32" ElementType="Button" FriendlyName="'취소'" FullSelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='취소' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='취소' role='push button' automationid='' check:fulltext='취소' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAkCAYAAAAw55zoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF9SURBVGhD7Zo7coMwFEWzDu/Oa/Am3Lv3GrwBduDOXSaF4/xgHBIKFyF45oUrZI24WGQmEyCBd2ZU6ENxj56gEDei1FAhRE1IcT5L+pbJ/v5Jbu/2o27IiKzI7OOEYOLw+CKv6bvk+acdHS/IiKzI7EtxQmALC6YG53ZCUEJTqAwGmZH9ghOCczVV/OwqpESFECqEUCGECiEGEZJEiax2tmPZruPGmA+emUcn2+uO/oTsjjJbxFfaUbbl9HdCMD9bZ7bXHQNUyEk2y7ix221CUB2QgTVdV0nPQjJZlVUxjzIjxd/xkBCuDNNfppLY/m/TmxATZJHIxktidr4UBBEspFofqJoklTmOWwdHqOcKCcNCmHG9VC87Gmr2/TAdIQTCcXgV0iYk+IlutjaJP+HfVEhfqBBiECF/GRVCqBBChRAqhFAhhAohrgrRi6oKJ0SvMiucEHPZ/fBsJj/y3I6OF2RE1uBlNygK+zvEYQK/Q5QZkRWZfWpCFBVCiHwBVCB7He/ti2UAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '확인'" sap:VirtualizedContainerService.HintSize="510,158" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3963bff-0c2d-4c91-a1dc-e386258a8f6a" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="1112, 157, 64, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'확인'" FullSelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='확인' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='확인' role='push button' automationid='' check:fulltext='확인' /&gt;" Guid="88746cdd-b691-4d3e-9945-e3748d9814b0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAkCAYAAAAw55zoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIXSURBVGhD7ZrfSgJBFMZ7jl6gbiqCoIsguuoVhHqMugv6BxF10VWQ2RMoBBXdREQWeGMEdVFE+QBuhqipq5Sd+mbH3bPrKER/rNn54MPZmV3x+3Fm9uLYQ0Y++YAc3dRocuOJ+uYs6p3Jam1kRNbj25pM78gFsnlSVj4YBm8lK5KCBHJ6VxcLQ4uPlLiwySo1xKLOQkZkRWZkP7+vi3kBJBLNi8n9K5sOr20aX3ty6elqZERWZMb19E7eA9Ivz4xyrUET6/rDaBpZ8+U3MR5eevSANG/g47CYZ4YMEJYZMkBYZsgAYZkhA4Rlhn4JSJUe6IXiyrXummeGfhBIiVJV8ZWtqtZpHpDEZ+C5vToV5G3QQ9pbi1sNSu2xe7/BEB93ccuogKCSeGj/tRZA4pb4Wk9WVa4pgKRfqJApedeBuf8PRBFwPtOQ2yCMQD7csULklAchBFvGMYIF3zKKCoG1PVQDwfxCsDZAOlijCvmMVdXkWAsgOETbSlkh7YH8hCE+7mKFtNsyBkjrvPglarW8lr9oiI//4Bnyu+aZIQOEZYYMEJYZMkBYZsgAYZkhA4RlhgwQlhkSQAYWnHYemjZhbVQNfjBwgUS2nVbmgWxljq3mfA/q6GArcyrGWpm82b17aVPuWf9md7boNLtRGcjua3ZD0WTFpRc2x84Cf4doKmO90myiSCPLDjWdPbqSE1mRmcsHxIjoHeScal1JmmOFAAAAAElFTkSuQmCC" InformativeScreenshot="45fabd743f1366c2f3c73bd18bfccee6.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='KT bizmeka EZ_인사 - Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="760, 121, 416, 20" ElementType="Text" FriendlyName="'요청이 완료되었습니다.'" FullSelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='요청이 완료되었습니다.' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='요청이 완료되었습니다.' role='text' automationid='' check:fulltext='요청이 완료되었습니다.' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAaQAAAAYCAYAAAC1M4mPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM2SURBVHhe7ZrrjeIwFEa3lB1p62I0pcCUA7UwfdBEJteJ49e1E5tEeNE5kn9A4ifSd7iBPwMAAEAHICQAAOgChAQAAF2AkAAAoAsQEgAAdAFCAgCALthRSI/h+vk1XB/zy4Wf4fx5G6/WMPb5+B7u86sS98u/4e+Ha+elU249B3D/Hk7KRI/rl7e2cD9yTevjs+WeNarHeNyGU/XnBQDwPBkhiRDCoI8D1RKGrnZ/TkjhHE4kwjYhmbkvP/MrQfpZCRUE6c2bNmXeUTjqvXZuRUjJ2iTovbHXRWHXuSLVjAwt6TxyLtE+TJvXhpAA4EWkQjLBqYSgCeVSONZUSFMoOglN4Ru+XhfS/ZLO5wK4pULKzCt7D8QXkUhBn1vWZvdYEtJU9dn+s5hykmgSUuFcEBIAvIhESBKGYbXiKIXoJKwxOOfglnuXb99xwGkBH7y3TUhmjmAc6WfDtiBIuy61HSskf660z/S+ev72fOP1JXOHICQA+F/YRUj2d5zz3YaqH5qjAKKAU8cJgnCbkIT635C2j71QLaRpj0EfU3m69eXOshqEBABvwpOP7GYBKcIJHjkdKCSDGqJWjtIiQbYIyZPe0uycGSlM5+Du90Ufn0Es1mLzRXeEkJa5Ks8JAOAJ9D81ZAI4VzlVI+PHFUfw3ro04rCP21StacErY+t9bCvtU60gV6SgoUq5hSOElMgdAOB48kKKhFF6lGdRJRGLxzBVL248kYQfkg1VTMJK8EZBLmvfItxqISkBnz/LwppzokBIAPAm7CYkua7Jx0hKDbiwUgnH3i6kvEg6EZKcZbD/WMY+bUIKvgB4TdakC0m/33x+CAkAXoQTkgSRFlJqi0NTQi4nkNK1HHsIKcVIU92P0qxcC4FvmoR3QUjy1/TTKIDluj3nQuWoziOtQRSpkFZASADwIvQKqYH6CqnEMUI6jIyQzN7NmUyiOV1vpiq0/0ZM+8j7lRXSCs8LaZakKlAAgP3YTUiCCeD4W31TkNUJKZnTa1Vh3IoiJCcjy/SI0slTk9Ic/tEelkaFBABvzK5CAgAAaAUhAQBAFyAkAADoAoQEAABdgJAAAKALEBIAAHTAMPwCiOd1jVRcFHkAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="628,1606" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If Condition="[Now.Subtract(Notes.Sheet(&quot;Scratchpad&quot;).Cell(&quot;startTime&quot;).DateTimeValue).Hours &gt;= CInt(Notes.Sheet(&quot;Scratchpad&quot;).Cell(&quot;totalWorkHours&quot;))]" sap:VirtualizedContainerService.HintSize="586,1518" sap2010:WorkflowViewState.IdRef="If_11">
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="552,1335" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="510,91" sap2010:WorkflowViewState.IdRef="WriteLine_19" Text="퇴근" />
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '퇴근'" sap:VirtualizedContainerService.HintSize="510,158" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3963bff-0c2d-4c91-a1dc-e386258a8f6a" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://ezkhuman.bizmeka.com/product/outlnk.do?code=PJ02&amp;" CvElementArea="1767, 476, 66, 33" CvTextArea="1787, 485, 26, 15" CvTextArgument="e2" CvType="Button" DesignTimeRectangle="1769, 477, 63, 31" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'퇴근'" FullSelectorArgument="&lt;webctrl id='btnGoHome' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnGoHome' tag='BUTTON' type='button' class='btn btn-color7 br' aaname=' 퇴근 ' check:innerText='퇴근' /&gt;" Guid="b913d419-a329-4844-bc7e-dce99aec1039" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEMAAAAjCAYAAADPPrcpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEMSURBVGhD7dkxDoIwGIZhr8AFG85DOAll4Rp4BzYHBs7wS6XUL6bYYNoG0+9NOgAy/I8VB27CXMSAHMY0TTIMg3RdV8wy85q59xyGubAsiz0qIzOvmXvPYRipEsO5iUGMd8SAiAERAyIGRAzoAhiz6LqSqhnt8dbcK6mq9fzBUv1sPxmvLBhHg20D+TGOG6V198YtC8bYrMPWeh3bV4kYsCP21d7N1d8wtnvj9n8746FFEcP2wlCiH/Y4YlkwzjxAQ/8inyvmDsmC4fJ+q2efGem6LMb3n1aakmMEt32jy8EIV9DOCOfHCO6oBFAXwLhOxICIAREDIgZEDIgYkBeD71oBg2/hAYMRAxJ5AqMq4lqM6E8oAAAAAElFTkSuQmCC" InformativeScreenshot="69d30b56b2e6197751f58081c7653bad.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='KT bizmeka EZ_인사' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvType="Button" DesignTimeRectangle="1702, 477, 63, 31" ElementType="Button" FriendlyName="'출근'" FullSelectorArgument="&lt;webctrl id='btnGoOffice' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnGoOffice' tag='BUTTON' type='button' class='btn btn-color7 br' aaname=' 출근 ' check:innerText='출근' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEMAAAAjCAYAAADPPrcpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEhSURBVGhD7Zm9DYMwEEazAgsiVkkZ5EmAhjVgB7oUFMxwwWDMQYxihGP+viddgbGQ7vkDI/lBQAMZDC2jqirK85ySJLlNyX5l3wNahrzRNI26ugeyX9n3gJYhTd0R3jdkQMYIZDAggwEZDMhgQAZjBxkFiSCgYKi4UONzZvO+SrQz3HLKZNRZeHYZNaWRaYX7EqWaZsEFZMwoxShj8VUx08mI0lavW7zJKOJpEiYClJgws2uve9aZZbikk7EyTTZ4kPFrV5hV9KKnaXypHCZkp2Soj+kfVncLHmWs/G94pxS242t2ma3slIwpxq3y2jKQDEYvw3b7tPnwuhZ1oGT4TYEJjzKOD2QwIIMBGQzIYEAGwygDZ61MBk7hmQwAGQyiDxKHweIQ9F5NAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '확인'" sap:VirtualizedContainerService.HintSize="510,158" sap2010:WorkflowViewState.IdRef="NClick_21" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3963bff-0c2d-4c91-a1dc-e386258a8f6a" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable DesignTimeRectangle="1040, 157, 64, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'확인'" FullSelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='확인' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='확인' role='push button' automationid='' check:fulltext='확인' /&gt;" Guid="e2ca1829-5ce8-4e3e-97d5-983f8698bcef" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAkCAYAAAAw55zoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIXSURBVGhD7ZrfSgJBFMZ7jl6gbiqCoIsguuoVhHqMugv6BxF10VWQ2RMoBBXdREQWeGMEdVFE+QBuhqipq5Sd+mbH3bPrKER/rNn54MPZmV3x+3Fm9uLYQ0Y++YAc3dRocuOJ+uYs6p3Jam1kRNbj25pM78gFsnlSVj4YBm8lK5KCBHJ6VxcLQ4uPlLiwySo1xKLOQkZkRWZkP7+vi3kBJBLNi8n9K5sOr20aX3ty6elqZERWZMb19E7eA9Ivz4xyrUET6/rDaBpZ8+U3MR5eevSANG/g47CYZ4YMEJYZMkBYZsgAYZkhA4Rlhn4JSJUe6IXiyrXummeGfhBIiVJV8ZWtqtZpHpDEZ+C5vToV5G3QQ9pbi1sNSu2xe7/BEB93ccuogKCSeGj/tRZA4pb4Wk9WVa4pgKRfqJApedeBuf8PRBFwPtOQ2yCMQD7csULklAchBFvGMYIF3zKKCoG1PVQDwfxCsDZAOlijCvmMVdXkWAsgOETbSlkh7YH8hCE+7mKFtNsyBkjrvPglarW8lr9oiI//4Bnyu+aZIQOEZYYMEJYZMkBYZsgAYZkhA4RlhgwQlhkSQAYWnHYemjZhbVQNfjBwgUS2nVbmgWxljq3mfA/q6GArcyrGWpm82b17aVPuWf9md7boNLtRGcjua3ZD0WTFpRc2x84Cf4doKmO90myiSCPLDjWdPbqSE1mRmcsHxIjoHeScal1JmmOFAAAAAElFTkSuQmCC" InformativeScreenshot="74403c23bc4d7213b2770e34c383b101.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='KT bizmeka EZ_인사 - Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="1112, 157, 64, 32" ElementType="Button" FriendlyName="'취소'" FullSelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='취소' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='취소' role='push button' automationid='' check:fulltext='취소' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAkCAYAAAAw55zoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF9SURBVGhD7Zo7coMwFEWzDu/Oa/Am3Lv3GrwBduDOXSaF4/xgHBIKFyF45oUrZI24WGQmEyCBd2ZU6ENxj56gEDei1FAhRE1IcT5L+pbJ/v5Jbu/2o27IiKzI7OOEYOLw+CKv6bvk+acdHS/IiKzI7EtxQmALC6YG53ZCUEJTqAwGmZH9ghOCczVV/OwqpESFECqEUCGECiEGEZJEiax2tmPZruPGmA+emUcn2+uO/oTsjjJbxFfaUbbl9HdCMD9bZ7bXHQNUyEk2y7ix221CUB2QgTVdV0nPQjJZlVUxjzIjxd/xkBCuDNNfppLY/m/TmxATZJHIxktidr4UBBEspFofqJoklTmOWwdHqOcKCcNCmHG9VC87Gmr2/TAdIQTCcXgV0iYk+IlutjaJP+HfVEhfqBBiECF/GRVCqBBChRAqhFAhhAohrgrRi6oKJ0SvMiucEHPZ/fBsJj/y3I6OF2RE1uBlNygK+zvEYQK/Q5QZkRWZfWpCFBVCiHwBVCB7He/ti2UAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '확인'" sap:VirtualizedContainerService.HintSize="510,158" sap2010:WorkflowViewState.IdRef="NClick_22" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3963bff-0c2d-4c91-a1dc-e386258a8f6a" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable DesignTimeRectangle="1112, 157, 64, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'확인'" FullSelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='확인' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='확인' role='push button' automationid='' check:fulltext='확인' /&gt;" Guid="82ae4ef7-27f9-40a0-9e35-4e9b29645469" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAkCAYAAAAw55zoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIXSURBVGhD7ZrfSgJBFMZ7jl6gbiqCoIsguuoVhHqMugv6BxF10VWQ2RMoBBXdREQWeGMEdVFE+QBuhqipq5Sd+mbH3bPrKER/rNn54MPZmV3x+3Fm9uLYQ0Y++YAc3dRocuOJ+uYs6p3Jam1kRNbj25pM78gFsnlSVj4YBm8lK5KCBHJ6VxcLQ4uPlLiwySo1xKLOQkZkRWZkP7+vi3kBJBLNi8n9K5sOr20aX3ty6elqZERWZMb19E7eA9Ivz4xyrUET6/rDaBpZ8+U3MR5eevSANG/g47CYZ4YMEJYZMkBYZsgAYZkhA4Rlhn4JSJUe6IXiyrXummeGfhBIiVJV8ZWtqtZpHpDEZ+C5vToV5G3QQ9pbi1sNSu2xe7/BEB93ccuogKCSeGj/tRZA4pb4Wk9WVa4pgKRfqJApedeBuf8PRBFwPtOQ2yCMQD7csULklAchBFvGMYIF3zKKCoG1PVQDwfxCsDZAOlijCvmMVdXkWAsgOETbSlkh7YH8hCE+7mKFtNsyBkjrvPglarW8lr9oiI//4Bnyu+aZIQOEZYYMEJYZMkBYZsgAYZkhA4RlhgwQlhkSQAYWnHYemjZhbVQNfjBwgUS2nVbmgWxljq3mfA/q6GArcyrGWpm82b17aVPuWf9md7boNLtRGcjua3ZD0WTFpRc2x84Cf4doKmO90myiSCPLDjWdPbqSE1mRmcsHxIjoHeScal1JmmOFAAAAAElFTkSuQmCC" InformativeScreenshot="45fabd743f1366c2f3c73bd18bfccee6.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='KT bizmeka EZ_인사 - Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="760, 121, 416, 20" ElementType="Text" FriendlyName="'요청이 완료되었습니다.'" FullSelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='요청이 완료되었습니다.' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='요청이 완료되었습니다.' role='text' automationid='' check:fulltext='요청이 완료되었습니다.' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAaQAAAAYCAYAAAC1M4mPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM2SURBVHhe7ZrrjeIwFEa3lB1p62I0pcCUA7UwfdBEJteJ49e1E5tEeNE5kn9A4ifSd7iBPwMAAEAHICQAAOgChAQAAF2AkAAAoAsQEgAAdAFCAgCALthRSI/h+vk1XB/zy4Wf4fx5G6/WMPb5+B7u86sS98u/4e+Ha+elU249B3D/Hk7KRI/rl7e2cD9yTevjs+WeNarHeNyGU/XnBQDwPBkhiRDCoI8D1RKGrnZ/TkjhHE4kwjYhmbkvP/MrQfpZCRUE6c2bNmXeUTjqvXZuRUjJ2iTovbHXRWHXuSLVjAwt6TxyLtE+TJvXhpAA4EWkQjLBqYSgCeVSONZUSFMoOglN4Ru+XhfS/ZLO5wK4pULKzCt7D8QXkUhBn1vWZvdYEtJU9dn+s5hykmgSUuFcEBIAvIhESBKGYbXiKIXoJKwxOOfglnuXb99xwGkBH7y3TUhmjmAc6WfDtiBIuy61HSskf660z/S+ev72fOP1JXOHICQA+F/YRUj2d5zz3YaqH5qjAKKAU8cJgnCbkIT635C2j71QLaRpj0EfU3m69eXOshqEBABvwpOP7GYBKcIJHjkdKCSDGqJWjtIiQbYIyZPe0uycGSlM5+Du90Ufn0Es1mLzRXeEkJa5Ks8JAOAJ9D81ZAI4VzlVI+PHFUfw3ro04rCP21StacErY+t9bCvtU60gV6SgoUq5hSOElMgdAOB48kKKhFF6lGdRJRGLxzBVL248kYQfkg1VTMJK8EZBLmvfItxqISkBnz/LwppzokBIAPAm7CYkua7Jx0hKDbiwUgnH3i6kvEg6EZKcZbD/WMY+bUIKvgB4TdakC0m/33x+CAkAXoQTkgSRFlJqi0NTQi4nkNK1HHsIKcVIU92P0qxcC4FvmoR3QUjy1/TTKIDluj3nQuWoziOtQRSpkFZASADwIvQKqYH6CqnEMUI6jIyQzN7NmUyiOV1vpiq0/0ZM+8j7lRXSCs8LaZakKlAAgP3YTUiCCeD4W31TkNUJKZnTa1Vh3IoiJCcjy/SI0slTk9Ic/tEelkaFBABvzK5CAgAAaAUhAQBAFyAkAADoAoQEAABdgJAAAKALEBIAAHTAMPwCiOd1jVRcFHkAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="510,522" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_6" ResizeWindow="None" WorkbookPath="Project_Notebook.xlsx">
+                          <ueab:ExcelApplicationCard.Body>
+                            <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="476,249" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Scratchpad&quot;).Cell(&quot;startTime&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,161" sap2010:WorkflowViewState.IdRef="WriteCellX_8" Value="[string.Format(&quot;empty&quot;)]" />
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelApplicationCard.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ueab:ExcelApplicationCard>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap:VirtualizedContainerService.HintSize="300,81" sap2010:WorkflowViewState.IdRef="Sequence_49">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </If.Else>
+            </If>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '로그아웃'" sap:VirtualizedContainerService.HintSize="954,158" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3963bff-0c2d-4c91-a1dc-e386258a8f6a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://ezkhuman.bizmeka.com/product/outlnk.do?code=PJ02&amp;" CvType="Icon" DesignTimeRectangle="1893, 101, 15, 18" DesignTimeScaleFactor="1" FriendlyName="'로그아웃'" FullSelectorArgument="&lt;webctrl tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='I' type='' class='fa fa-power-off' aaname='' check:innerText='로그아웃' /&gt;" Guid="bce0c6a1-1044-4e09-a621-011e48141f9b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABMAAAAWCAYAAAAinad/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG9SURBVDhPzZRdSwJBFIb7/V4EXhh6YSyk4UWSrVimlLLiRwtmLKgkWVhZaopiimLK2+zs2c92laCLHjgXe2bnmTOzZ2cPf8hO2ddHG7fNLmb0vI0dshZOgnH4DuIQqmPKebND1kSMiVRZqDCgnDcO2QztwhUChxnkemv27JBt3iGdpuA/LqIxVcftWGQzNC5FPpHHeYvlHLKBjJA+Hs5BmWszdQzZ8j4Hv/FiBpJbZc4FYzUM+WwNknVxIdALwTSkkb4FtzObQRETJEwg0TK3q8leykZVgXyXpzQ8PsBcgUB57Tg0uGxyk6aVUsj2eJ6wyEoWGcaQYiQ7ktGnLJf1CymSZVC2Heoak8cqkvkmhhtKEYpIsqCEBuW4bFjSZc7KvFhAjpPMWRkeJOxzWRzhyu5Ox7KOCP0ZPrFJSV2GJyTDNOjSP3bW6Fyb7RG5W1DekLGtGh+BRbSMe5cOB1boVDJmP1q2qGLI7P3DIiginK2xG+MZ/Td2c1SKEPRe5OPq+doXtMgYmxHkM0uHe4X6h7yuaJKJXcbR2iEWtVSpB6tWyNbR/+nhuMgsLKeYTMdafJoH7cV22S/5rzLgG+zk+kehh2c8AAAAAElFTkSuQmCC" InformativeScreenshot="da149160789b22cdad5f85b0b3f8c69a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='KT bizmeka EZ_인사' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="118, 79, 1710, 59" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl tag='UL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='UL' type='' class='topmenu' aaname=' &amp;#x9;&amp;#x9; &amp;#x9;' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State '확인'" sap:VirtualizedContainerService.HintSize="954,623" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="b3963bff-0c2d-4c91-a1dc-e386258a8f6a" Timeout="2.5" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="타겟이 나타남" sap:VirtualizedContainerService.HintSize="450,404" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '확인'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3963bff-0c2d-4c91-a1dc-e386258a8f6a" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="1040, 157, 64, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'확인'" FullSelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='확인' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='확인' role='push button' automationid='' check:fulltext='확인' /&gt;" Guid="6ff6c68a-e5ca-44c3-bd45-3e66040abe87" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAkCAYAAAAw55zoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIXSURBVGhD7ZrfSgJBFMZ7jl6gbiqCoIsguuoVhHqMugv6BxF10VWQ2RMoBBXdREQWeGMEdVFE+QBuhqipq5Sd+mbH3bPrKER/rNn54MPZmV3x+3Fm9uLYQ0Y++YAc3dRocuOJ+uYs6p3Jam1kRNbj25pM78gFsnlSVj4YBm8lK5KCBHJ6VxcLQ4uPlLiwySo1xKLOQkZkRWZkP7+vi3kBJBLNi8n9K5sOr20aX3ty6elqZERWZMb19E7eA9Ivz4xyrUET6/rDaBpZ8+U3MR5eevSANG/g47CYZ4YMEJYZMkBYZsgAYZkhA4Rlhn4JSJUe6IXiyrXummeGfhBIiVJV8ZWtqtZpHpDEZ+C5vToV5G3QQ9pbi1sNSu2xe7/BEB93ccuogKCSeGj/tRZA4pb4Wk9WVa4pgKRfqJApedeBuf8PRBFwPtOQ2yCMQD7csULklAchBFvGMYIF3zKKCoG1PVQDwfxCsDZAOlijCvmMVdXkWAsgOETbSlkh7YH8hCE+7mKFtNsyBkjrvPglarW8lr9oiI//4Bnyu+aZIQOEZYYMEJYZMkBYZsgAYZkhA4RlhgwQlhkSQAYWnHYemjZhbVQNfjBwgUS2nVbmgWxljq3mfA/q6GArcyrGWpm82b17aVPuWf9md7boNLtRGcjua3ZD0WTFpRc2x84Cf4doKmO90myiSCPLDjWdPbqSE1mRmcsHxIjoHeScal1JmmOFAAAAAElFTkSuQmCC" InformativeScreenshot="c5ffe45c601586810744f7f6ce1e9067.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='KT bizmeka EZ_인사 - Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="760, 121, 416, 20" ElementType="Text" FriendlyName="'로그아웃 하시겠습니까?'" FullSelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='로그아웃 하시겠습니까?' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='로그아웃 하시겠습니까?' role='text' automationid='' check:fulltext='로그아웃 하시겠습니까?' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAaQAAAAYCAYAAAC1M4mPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANcSURBVHhe7ZqNbdswEEY7Sgp0rgQZxfY4yizOHl6C1VGyxCOPpCjZMYu+BxCIJf6JBr6XU/LLAQAAdABCAgCALkBIAADQBQgJAAC6ACEBAEAXICQAAOiCLoV0Gz7d6Tp/iLl9uffff9ybap9uuM33t3K9uPdk0Lc7fXy51qlkv/Fc13O8x4uTR1r6ynNU1rLmbaV9jvEM5r0CAPwkqZDGoNZBqpsVbhJ6Vt+pZWShxKL7yHymkPwYY77c9YjiPr0cKkIyJTbNWw79dd6lb1VIIgbZW+W5Mnu6k+xNnfvFDcGZTGeOkADgNTRVSPXgjbm54cMKVAm94LoPyTUEZR1TSIXwzY5p4klCCsYtfQtCmqqr+/nMYsrtq1VIC1o86/lZQpr34Ftd/AAAe0iEJMF0/43ZasXgTbCFZIVkeG0Nx4hcJZS7nkG9TlNBXxfS2/l7/rBiPc/KfAbDWnn6vomQpN90PyfjaXwkiyNCCtaXM8kJ6XrW4srKEQDgAKaQSgHXhi2kNfwCgrD3oReGd4iXz3RvbY0yCqSiA7YsJD/WuF86MxkT3lv6FiqkJvYKSck1/J5SISlk34aUAQCO0q2QzCrhMFbYxmF8l1zcb5LVcE6fxz6zqeKJr+eE5GWnJFtooRB2Ckl/B6GIS2dgf58AAI+g+ZVd2+saO8CskAyvyc9KSGZVlGulwNwgpMzzLQFuVDbJ8/j9VoLbmGcXe4Tk9xecg6qWrDMSkBEAPJfKPzXkwmkrEmLWeJk3CLcoIBMhmezbm69EggpD1qq9svN9oqokFLMZ+gvpnPn+hdDPCaxZSLJGWB3Fa2bOtbIOAMBRniykwngvIbuqkRCtC2k/6vWYCnlbHkpGM+H1vGBG4mpkRNZ/pJDW6lA3WSPeWyxkXR0JCAkAXsMqJCWIWptDc8+YDWwT0lFZWqRC2kJJSF4+o2TW+7JvOQ9r71P1Yp/f2B68N0uWzzlXAIA6lQrpNdSEJPcloE/DLESjgtnHg4Uk1cc831SZfC2vy/wzJPveUSFVKArJxBbSdOaICgCex78jpKAaSwJ2eW21vQqzeZyQfICrueK/3cx9lJR+uEIyoUICgNfQpZAAAOD/AyEBAEAXICQAAOgChAQAAF2AkAAAoAsQEgAAdIBzfwEoMrICZavWngAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="388,91" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="타겟이 나타나지 않음" sap:VirtualizedContainerService.HintSize="450,106" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1040, 157, 64, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'확인'" FullSelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='확인' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='확인' role='push button' automationid='' check:fulltext='확인' /&gt;" Guid="af82b734-2019-4c4f-9ce5-64e380543962" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAkCAYAAAAw55zoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIXSURBVGhD7ZrfSgJBFMZ7jl6gbiqCoIsguuoVhHqMugv6BxF10VWQ2RMoBBXdREQWeGMEdVFE+QBuhqipq5Sd+mbH3bPrKER/rNn54MPZmV3x+3Fm9uLYQ0Y++YAc3dRocuOJ+uYs6p3Jam1kRNbj25pM78gFsnlSVj4YBm8lK5KCBHJ6VxcLQ4uPlLiwySo1xKLOQkZkRWZkP7+vi3kBJBLNi8n9K5sOr20aX3ty6elqZERWZMb19E7eA9Ivz4xyrUET6/rDaBpZ8+U3MR5eevSANG/g47CYZ4YMEJYZMkBYZsgAYZkhA4Rlhn4JSJUe6IXiyrXummeGfhBIiVJV8ZWtqtZpHpDEZ+C5vToV5G3QQ9pbi1sNSu2xe7/BEB93ccuogKCSeGj/tRZA4pb4Wk9WVa4pgKRfqJApedeBuf8PRBFwPtOQ2yCMQD7csULklAchBFvGMYIF3zKKCoG1PVQDwfxCsDZAOlijCvmMVdXkWAsgOETbSlkh7YH8hCE+7mKFtNsyBkjrvPglarW8lr9oiI//4Bnyu+aZIQOEZYYMEJYZMkBYZsgAYZkhA4RlhgwQlhkSQAYWnHYemjZhbVQNfjBwgUS2nVbmgWxljq3mfA/q6GArcyrGWpm82b17aVPuWf9md7boNLtRGcjua3ZD0WTFpRc2x84Cf4doKmO90myiSCPLDjWdPbqSE1mRmcsHxIjoHeScal1JmmOFAAAAAElFTkSuQmCC" InformativeScreenshot="bcac1bf16792b4280445bd3a06e1a14c.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='KT bizmeka EZ_인사 - Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="760, 121, 416, 20" ElementType="Text" FriendlyName="'로그아웃 하시겠습니까?'" FullSelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='로그아웃 하시겠습니까?' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ezkhuman.bizmeka.com 내용:' role='dialog' /&gt;&lt;ctrl name='로그아웃 하시겠습니까?' role='text' automationid='' check:fulltext='로그아웃 하시겠습니까?' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAaQAAAAYCAYAAAC1M4mPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANcSURBVHhe7ZqNbdswEEY7Sgp0rgQZxfY4yizOHl6C1VGyxCOPpCjZMYu+BxCIJf6JBr6XU/LLAQAAdABCAgCALkBIAADQBQgJAAC6ACEBAEAXICQAAOiCLoV0Gz7d6Tp/iLl9uffff9ybap9uuM33t3K9uPdk0Lc7fXy51qlkv/Fc13O8x4uTR1r6ynNU1rLmbaV9jvEM5r0CAPwkqZDGoNZBqpsVbhJ6Vt+pZWShxKL7yHymkPwYY77c9YjiPr0cKkIyJTbNWw79dd6lb1VIIgbZW+W5Mnu6k+xNnfvFDcGZTGeOkADgNTRVSPXgjbm54cMKVAm94LoPyTUEZR1TSIXwzY5p4klCCsYtfQtCmqqr+/nMYsrtq1VIC1o86/lZQpr34Ftd/AAAe0iEJMF0/43ZasXgTbCFZIVkeG0Nx4hcJZS7nkG9TlNBXxfS2/l7/rBiPc/KfAbDWnn6vomQpN90PyfjaXwkiyNCCtaXM8kJ6XrW4srKEQDgAKaQSgHXhi2kNfwCgrD3oReGd4iXz3RvbY0yCqSiA7YsJD/WuF86MxkT3lv6FiqkJvYKSck1/J5SISlk34aUAQCO0q2QzCrhMFbYxmF8l1zcb5LVcE6fxz6zqeKJr+eE5GWnJFtooRB2Ckl/B6GIS2dgf58AAI+g+ZVd2+saO8CskAyvyc9KSGZVlGulwNwgpMzzLQFuVDbJ8/j9VoLbmGcXe4Tk9xecg6qWrDMSkBEAPJfKPzXkwmkrEmLWeJk3CLcoIBMhmezbm69EggpD1qq9svN9oqokFLMZ+gvpnPn+hdDPCaxZSLJGWB3Fa2bOtbIOAMBRniykwngvIbuqkRCtC2k/6vWYCnlbHkpGM+H1vGBG4mpkRNZ/pJDW6lA3WSPeWyxkXR0JCAkAXsMqJCWIWptDc8+YDWwT0lFZWqRC2kJJSF4+o2TW+7JvOQ9r71P1Yp/f2B68N0uWzzlXAIA6lQrpNdSEJPcloE/DLESjgtnHg4Uk1cc831SZfC2vy/wzJPveUSFVKArJxBbSdOaICgCex78jpKAaSwJ2eW21vQqzeZyQfICrueK/3cx9lJR+uEIyoUICgNfQpZAAAOD/AyEBAEAXICQAAOgChAQAAF2AkAAAoAsQEgAAdIBzfwEoMrICZavWngAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVDhPYxh84DGb8H8YhgoRD5A1k2UINgOwYahyVIBNIT4M1YYAMIn3xdX//zx5+v/3/Qf/36XmgvG3TdsgeN0m7AbABJ+KKv4HAZCmD+V1//++fff/paXz/4+t3f9/nbsIxjC1cEOQBZ5rm4EN+HXxyv9f12+C2SBxkCEgw0DyyOpBGMWAZyoGYE1vY1P/vwmJ/f/KyRvsKpB3QGLIamEYNfA4xcD+/3nqLNi/XxevADsfBEBiIDl0V2B4A+QKUECCwgDkghdmDvDAfO0VArYERTMyQDYIH4Yqxw7QFSLzkcVJAhRpxg8YGABtHEo2eltyuwAAAABJRU5ErkJggg==" InformativeScreenshot="f05c120a62f003ecaaf2ad5ea2e9d5f2.jpg" Selector="&lt;html app='chrome.exe' title='KT bizmeka EZ' /&gt;" Title="KT bizmeka EZ" Url="[Notes.Sheet(&quot;Scratchpad&quot;).Cell(&quot;비즈메카&quot;)]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
