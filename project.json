@@ -1,5 +1,6 @@
 {
   "name": "LoginProcess_Desktop",
+  "projectId": "0dae4482-0b9d-441e-8687-e241d5f46449",
   "description": "Log in Process",
   "main": "Main.xaml",
   "dependencies": {
@@ -15,7 +16,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.4.2.0",
-  "projectVersion": "1.0.1",
+  "projectVersion": "1.0.7",
   "runtimeOptions": {
     "exceptionHandlerWorkflow": "GlobalHandlerX.xaml",
     "autoDispose": false,
